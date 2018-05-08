@@ -1,0 +1,87 @@
+{
+    "name": "ionic-hello-world",
+    "author": "Ionic Framework",
+    "homepage": "http://ionicframework.com/",
+    "private": true,
+    "scripts": {
+        "clean": "ionic-app-scripts clean",
+        "build": "ionic-app-scripts build",
+        "ionic:build": "ionic-app-scripts build",
+        "ionic:serve": "ionic-app-scripts serve"
+    },
+    "dependencies": {
+        "@angular/common": "2.2.1",
+        "@angular/compiler": "2.2.1",
+        "@angular/compiler-cli": "2.2.1",
+        "@angular/core": "2.2.1",
+        "@angular/forms": "2.2.1",
+        "@angular/http": "2.2.1",
+        "@angular/platform-browser": "2.2.1",
+        "@angular/platform-browser-dynamic": "2.2.1",
+        "@angular/platform-server": "2.2.1",
+        "@ionic-native/core": "^3.6.1",
+        "@ionic-native/fcm": "^4.5.2",
+        "@ionic-native/native-page-transitions": "^4.5.2",
+        "@ionic/storage": "^1.1.7",
+        "angular2-odoo-jsonrpc": "0.0.7",
+        "angular2-polyfill": "0.0.32",
+        "com.telerik.plugins.nativepagetransitions": "^0.6.5",
+        "cordova-android": "^6.2.3",
+        "cordova-plugin-compat": "^1.2.0",
+        "cordova-plugin-console": "1.0.5",
+        "cordova-plugin-device": "1.1.4",
+        "cordova-plugin-network-information": "^1.3.4",
+        "cordova-plugin-splashscreen": "~4.0.1",
+        "cordova-plugin-statusbar": "2.2.1",
+        "cordova-plugin-whitelist": "1.3.1",
+        "cordova-sqlite-storage": "~2.0.1",
+        "ionic-angular": "2.0.0-rc.4",
+        "ionic-native": "2.2.11",
+        "ionic-plugin-keyboard": "~2.2.1",
+        "ionicons": "3.0.0",
+        "ng2-order-pipe": "^0.1.5",
+        "rxjs": "5.0.0-beta.12",
+        "zone.js": "0.6.26"
+    },
+    "devDependencies": {
+        "@angular/cli": "^1.4.1",
+        "@ionic/app-scripts": "^2.1.4",
+        "typescript": "2.0.9",
+        "webpack": "^2.7.0",
+        "webpack-dev-server": "^2.2.1",
+        "webpack-merge": "^2.6.1"
+    },
+    "cordovaPlugins": [
+        "cordova-plugin-console",
+        "cordova-plugin-whitelist",
+        "cordova-plugin-statusbar",
+        "cordova-plugin-device",
+        "cordova-plugin-splashscreen",
+        "ionic-plugin-keyboard"
+    ],
+    "cordovaPlatforms": [
+        "ios",
+        {
+            "platform": "ios",
+            "version": "",
+            "locator": "ios"
+        }
+    ],
+    "description": "ionic_p7app: An Ionic project",
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-console": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-whitelist": {},
+            "cordova-sqlite-storage": {},
+            "ionic-plugin-keyboard": {},
+            "cordova-plugin-network-information": {},
+            "com.telerik.plugins.nativepagetransitions": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    }
+}

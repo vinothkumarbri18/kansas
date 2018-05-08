@@ -1,0 +1,72 @@
+<!--
+  Generated template for the ChildinfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Child Information</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background-color:aliceblue">
+   
+  <ion-list style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);margin-top:5%;border: 0.6px solid rgb(109, 112, 167)">
+        <ion-item no-lines>
+          <ion-label style="font-size:13px;color:black;width:50%"item-left >First Name</ion-label>
+          <ion-input required style="font-size:13px;color:black;width:50%" item-right type="text" [(ngModel)]="firstname" name="firstname" ></ion-input>
+        </ion-item>
+        <ion-item no-lines>
+            <ion-label style="font-size:13px;color:black;width:50%"item-left >Last Name</ion-label>
+            <ion-input style="font-size:13px;color:black;width:50%" item-right type="text" [(ngModel)]="lastname" name="lastname" ></ion-input>
+          </ion-item>
+          <ion-item no-lines>
+              <ion-label style="font-size:13px;color:black;width:50%"item-left >Phone Number</ion-label>
+              <ion-input style="font-size:13px;color:black;width:50%" item-right type="number" [(ngModel)]="phone" name="phone" ></ion-input>
+            </ion-item>
+          <ion-item no-lines>
+              <ion-label style="font-size:13px;color:black;width:50%"item-left >Email Address</ion-label>
+              <ion-input style="font-size:13px;color:black;width:50%" item-right type="email" [(ngModel)]="email" name="email" ></ion-input>
+            </ion-item>
+            <ion-item no-lines>
+                <ion-label style="font-size:13px;color:black;width:30%"item-left >DOB</ion-label>
+                <ion-datetime style="font-size:13px;color:black;width:70%" displayFormat="DD/MMM/YYYY" pickerFormat="DD/MMM/YYYY" [(ngModel)]="dob" name="dob" ></ion-datetime>
+              </ion-item>
+
+              <ion-item >
+                  <ion-label style="font-size:13px;color:black;width:50%">Gender</ion-label>
+                  <ion-select style="font-size:13px;color:black;width:50%;margin-right:6%;" [(ngModel)]="gender"> 
+                      <ion-option >Female</ion-option>
+                      <ion-option>Male</ion-option>
+                      <ion-option>Undefined</ion-option>
+                </ion-select>
+                  </ion-item >
+
+                  <ion-item no-lines>
+                      <ion-label style="font-size:13px;color:black;width:50%"item-left >Institution Name</ion-label>
+                      <ion-input style="font-size:13px;color:black;width:50%" item-right type="text" [(ngModel)]="institution" name="institution" ></ion-input>
+                    </ion-item>
+
+                    <ion-item no-lines>
+                        <ion-label style="font-size:13px;color:black;width:50%"item-left >Facebook Username</ion-label>
+                        <ion-input style="font-size:13px;color:black;width:50%" item-right type="text" [(ngModel)]="fb" name="fb" ></ion-input>
+                      </ion-item>
+     
+    </ion-list>
+   
+</ion-content>
+
+
+<ion-footer >
+  
+  <ion-item  no-lines style="height:20px;">
+
+    <button  style="width:40%;background-color:#00276C" item-left ion-button  (click)="submit()">Save</button>
+    <button  style="width:75%;background-color:	#FCB92F" item-right ion-button color="danger" (click)="discard()">Discard</button>
+          
+  </ion-item>
+</ion-footer>
